@@ -1,38 +1,75 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Magra:wght@400;700&display=swap");
+@font-face {
+  font-family: highspeed;
+  src: url(../src/assets/fontfamily/FontsFree-Net-High-Speed.ttf);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --fs-sm: 16px;
+  --fs-md: 20px;
+  --fs-lg: 22px;
+  --fs-xl: 27px;
+  --fs-2xl: 28px;
+  --fs-3xl: 30px;
+  --fs-4xl: 40px;
+  --fs-5xl: 49px;
+  /* color  */
+  --clr-white: #ffffff;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fs_sm {
+  font-size: var(--fs-sm) !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.fs_md {
+  font-size: var(--fs-md) !important;
 }
-
-.App-link {
-  color: #61dafb;
+.fs_lg {
+  font-size: var(--fs-lg) !important;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fs_xl {
+  font-size: var(--fs-xl) !important;
+}
+.fs_2xl {
+  font-size: var(--fs-2xl) !important;
+}
+.fs_3xl {
+  font-size: var(--fs-3xl) !important;
+}
+.fs_4xl {
+  font-size: var(--fs-4xl) !important;
+}
+.fs_5xl {
+  font-size: var(--fs-5xl) !important;
+}
+.clr_white {
+  color: var(--clr-white) !important;
+}
+.ff_highspeed {
+  font-family: highspeed !important;
+}
+.ff_magra {
+  font-family: "Magra", sans-serif;
+}
+.text_linear_before {
+  position: relative;
+}
+body {
+  background: #000 !important;
+}
+.text_linear_before::before {
+  content: "STORY";
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(
+      180deg,
+      #dbe86b 25.41%,
+      #d874ff 38%,
+      #8cf6b7 44.58%,
+      #118fe9 56.73%,
+      #31f4f4 62.38%,
+      #5276ff 68.04%
+    ),
+    #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: blur(3px);
 }
