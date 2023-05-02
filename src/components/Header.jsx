@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import MyNav from "./MyNav";
 import { Col, Container, Row } from "react-bootstrap";
 import togglebtn from "../assets/images/svg/toggle.svg";
 const Header = () => {
+  const [first, setfirst] = useState(true);
+  const clikontop = () => {
+    document.documentElement.scrollTop = 800;
+  };
+  // window.addEventListener("scroll", () => {
+  //   if (document.documentElement.scrollTop > 300) {
+  //     setfirst(false);
+  //   } else {
+  //     setfirst(true);
+  //   }
+  // });
   return (
     <section className="bghero">
       <MyNav />
@@ -45,6 +56,7 @@ const Header = () => {
           <img
             src={togglebtn}
             className="py-4 py-xl-5 cur_poi"
+            onClick={() => clikontop()}
             alt="toggleicon"
           />
         </div>
