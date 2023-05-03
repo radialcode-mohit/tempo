@@ -43,14 +43,16 @@ export default class CenterMode extends Component {
       ],
     };
     return (
-      <section className="">
-        <Container className=" my-5 py-5  overflow-hidden">
-          <div className="  h-100 bg- white py-5 ">
-            <Slider
-              {...settings}
-              className=" py-5 ps_12    justify-content-between "
-            >
-              <div className="  h-100">
+      <section>
+        <Container className=" my-lg-5 py-5 overflow-hidden">
+          <div className="text-center mb-5">
+            <span className=" ff_highspeed fw-normal fs_5xl clr_white ournft ">
+              OUR NFT
+            </span>
+          </div>
+          <div className=" w-100 h-100 bg- white py-5 ">
+            <Slider {...settings} className=" py-5 px-3  ">
+              <div className=" w-100 h-100">
                 <div className="avatar position-relative slide_box">
                   <img
                     src={women}

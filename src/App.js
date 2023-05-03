@@ -6,12 +6,20 @@ import About from "./components/About";
 import Center from "./components/Center";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Header from "./components/Header";
+import WatchVideo from "./components/WatchVideo";
+import AccordianSec from "./components/AccordianSec";
 function App() {
   return (
     <>
-      <Story />
-      <About />
-      <Center />
+      <div className="overflow-hidden">
+        <Header />
+        <Story />
+        <About />
+        <WatchVideo />
+        <Center />
+        <AccordianSec />
+      </div>
     </>
   );
 }
