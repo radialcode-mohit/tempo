@@ -7,7 +7,7 @@ const Story = () => {
   return (
     <section className="pb-5 position-relative">
       <Container>
-        <Row className="py-lg-5 align-items-center justify-content-center">
+        <Row className="py-lg-5 align-items-lg-end align-items-xl-center justify-content-center">
           <Col md={9} lg={6}>
             <div className="avatar overflow-hidden w-100 ">
               <img className="w-100 avatar  " src={gif} alt="gif" />

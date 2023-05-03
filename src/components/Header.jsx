@@ -7,13 +7,6 @@ const Header = () => {
   const clikontop = () => {
     document.documentElement.scrollTop = 800;
   };
-  // window.addEventListener("scroll", () => {
-  //   if (document.documentElement.scrollTop > 300) {
-  //     setfirst(false);
-  //   } else {
-  //     setfirst(true);
-  //   }
-  // });
   return (
     <section className="bghero">
       <MyNav />
@@ -32,7 +25,7 @@ const Header = () => {
               </p>
               <div className="d-flex flex-column flex-sm-row mt-5 pt-2 justify-content-center justify-content-xl-start">
                 {" "}
-                <div className=" position-relative  contact_btn_bg getstarted_btn padding_getstarted_btn">
+                <div className=" position-relative  contact_btn_bg getstarted_btn padding_getstarted_btn cur_poi">
                   <a
                     href="#"
                     className="ff_highspeed fw-normal   fs_md clr_white "
@@ -40,7 +33,7 @@ const Header = () => {
                     Get Started
                   </a>
                 </div>
-                <div className="mt-3 mt-sm-0 osition-relative ms-sm-4  more_btn_bg  padding_getstarted_btn">
+                <div className="mt-3 mt-sm-0 osition-relative ms-sm-4  more_btn_bg  padding_getstarted_btn cur_poi">
                   <a
                     href="#"
                     className="ff_highspeed fw-normal   fs_md clr_white "
@@ -55,7 +48,7 @@ const Header = () => {
         <div className="text-center">
           <img
             src={togglebtn}
-            className="py-4 py-xl-5 cur_poi"
+            className="my-4 my-xl-5 cur_poi"
             onClick={() => clikontop()}
             alt="toggleicon"
           />

@@ -10,10 +10,13 @@ import Header from "./components/Header";
 import WatchVideo from "./components/WatchVideo";
 import AccordianSec from "./components/AccordianSec";
 import Team from "./components/Team";
+import Preloader from "./components/Preloader";
+import TopToBottom from "./components/BackToTop";
 function App() {
   return (
     <>
       <div className="overflow-hidden">
+        <Preloader />
         <Header />
         <Story />
         <About />
@@ -21,6 +24,7 @@ function App() {
         <Center />
         <Team />
         <AccordianSec />
+        <TopToBottom />
       </div>
     </>
   );

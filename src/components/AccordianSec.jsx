@@ -9,8 +9,8 @@ import twocrcle from "../assets/images/img/faqleft.png";
 import rightcrcle from "../assets/images/img/faqright.png";
 const AccordianSec = () => {
   return (
-    <section className="bg_faq position-relative">
-      <Container>
+    <section className="bg_faq position-relative pt-lg-5">
+      <Container className="pt-lg-5">
         <div className="text-center mb-5">
           <span className=" ff_highspeed fw-normal fs_5xl clr_white faq ">
             FAQS
@@ -74,29 +74,26 @@ const AccordianSec = () => {
           <a href="#">
             <img src={logo} alt="logo" className="pt-5 mt-5" />
           </a>
-          <div className="d-flex justify-content-center mt-4 pt-3">
-            <a href="#">
-              {" "}
+          <div className="d-flex justify-content-center mt-4 pt-3 ">
+            <a href="#" className="hover_transform_imgs ">
               <img
-                className="position-relative hovershadow"
+                className="position-relative hovershadow transition"
                 src={tweeter}
                 alt="tweeter"
               />
             </a>
-            <a href="#">
-              {" "}
+            <a href="#" className="hover_transform_imgs ">
               <img
                 src={insta}
                 alt="insta"
-                className="ms-4 position-relative hovershadow"
+                className="ms-4 position-relative hovershadow transition"
               />
             </a>
-            <a href="#">
-              {" "}
+            <a href="#" className="hover_transform_imgs ">
               <img
                 src={disocrd}
                 alt="disocrd"
-                className="ms-4 position-relative hovershadow"
+                className="ms-4 position-relative hovershadow transition"
               />
             </a>
           </div>
