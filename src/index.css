@@ -1,5 +1,5 @@
 .slide_box {
-    Width: 424.94px;
+    Width: 360.94px;
     Height: 456.88px;
 }
 
@@ -32,7 +32,7 @@ body {
 }
 
 .avatar {
-    padding: 10px;
+    padding: 2px;
     display: inline-block;
     position: relative;
     z-index: 0;
@@ -50,7 +50,7 @@ body {
     max-width: 100%;
     transition: all 5s linear;
     transition: all 0.4s ease-in-out;
-    margin-left: 10px;
+    padding-left: 14px;
     margin-right: 13px;
 
 }
@@ -67,6 +67,7 @@ body {
 .slick-list {
     overflow: visible !important;
 }
+
 
 .avatar:before {
     width: 100%;
@@ -97,7 +98,7 @@ body {
 }
 
 .slick-next {
-    right: -10px !important;
+    right: -13px !important;
     background-image: url(./assets/images/svg/right.svg) !important;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -106,8 +107,14 @@ body {
 }
 
 .slick-prev {
-    left: 0px !important;
+    background-image: url(./assets/images/svg/left.svg) !important;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    left: -14px !important;
     z-index: 10 !important;
+    width: 60px !important;
+    height: 60px !important;
+    width: 100%;
 }
 
 .slick-next:before {
@@ -127,5 +134,9 @@ body {
 }
 
 .slick-next:before {
+    content: '' !important;
+}
+
+.slick-prev:before {
     content: '' !important;
 }

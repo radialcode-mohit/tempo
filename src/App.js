@@ -9,6 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Header from "./components/Header";
 import WatchVideo from "./components/WatchVideo";
 import AccordianSec from "./components/AccordianSec";
+import Team from "./components/Team";
 function App() {
   return (
     <>
@@ -18,6 +19,7 @@ function App() {
         <About />
         <WatchVideo />
         <Center />
+        <Team />
         <AccordianSec />
       </div>
     </>

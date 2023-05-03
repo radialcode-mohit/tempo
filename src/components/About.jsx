@@ -29,7 +29,7 @@ const About = () => {
               <div className=" position-relative mt-5">
                 <a
                   href="#"
-                  className="ff_highspeed fw-normal contact_btn_bg box_shadow_cntct_bg fs_md clr_white padding_contact_btn"
+                  className="ff_highspeed fw-normal position-relative  contact_btn_bg box_shadow_cntct_bg fs_md clr_white padding_contact_btn"
                 >
                   MINT NOW
                 </a>
