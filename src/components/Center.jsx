@@ -21,7 +21,7 @@ export default class CenterMode extends Component {
           breakpoint: 1024,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 3,
+             slidesToScroll: 3,
             infinite: true,
             dots: true,
           },
