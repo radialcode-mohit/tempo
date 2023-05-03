@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Header from "./components/Header";
 import WatchVideo from "./components/WatchVideo";
+import AccordianSec from "./components/AccordianSec";
 function App() {
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
         <About />
         <WatchVideo />
         <Center />
+        <AccordianSec />
       </div>
     </>
   );
