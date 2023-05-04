@@ -70,7 +70,7 @@ const AccordianSec = () => {
             </Accordion.Body>
           </Accordion.Item>
         </Accordion>
-        <div className="text-center pt-lg-5 pt-4 mt-lg-5">
+        <div className="text-center pt-lg-5  mt-lg-5">
           <a href="#">
             <img src={logo} alt="logo" className="pt-5 mt-5" />
           </a>

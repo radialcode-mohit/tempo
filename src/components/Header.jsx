@@ -2,16 +2,17 @@ import React, { useState } from "react";
 import MyNav from "./MyNav";
 import { Col, Container, Row } from "react-bootstrap";
 import togglebtn from "../assets/images/svg/toggle.svg";
+import shadowherosec from "../assets/images/img/heroseshadow.png";
 const Header = () => {
   const [first, setfirst] = useState(true);
   const clikontop = () => {
     document.documentElement.scrollTop = 800;
   };
   return (
-    <section className="bghero">
+    <section className="bghero position-relative">
       <MyNav />
       <Container className="py-5">
-        <Row className="py-lg-5 my-lg-5">
+        <Row className="py-lg-5 my_min_5">
           <Col xl={7} className=" text-center text-xl-start">
             <div>
               <p className=" ff_highspeed clr_white fw-normal fs_6xl mb-0">
@@ -25,7 +26,7 @@ const Header = () => {
               </p>
               <div className="d-flex flex-column flex-sm-row mt-5 pt-2 justify-content-center justify-content-xl-start">
                 {" "}
-                <div className=" position-relative  contact_btn_bg getstarted_btn padding_getstarted_btn cur_poi">
+                <div className=" position-relative  contact_btn_bg getstarted_btn hover_btn padding_getstarted_btn cur_poi">
                   <a
                     href="#"
                     className="ff_highspeed fw-normal   fs_md clr_white "
@@ -54,6 +55,11 @@ const Header = () => {
           />
         </div>
       </Container>
+      {/* <img
+        src={shadowherosec}
+        alt="shadowherosec"
+        className=" position-absolute shadowhero_pos"
+      /> */}
     </section>
   );
 };

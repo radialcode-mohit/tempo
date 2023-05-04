@@ -6,9 +6,9 @@ import twocrcle from "../assets/images/img/crcles.png";
 import rightcrcle from "../assets/images/img/rightcrcles.png";
 const WatchVideo = () => {
   return (
-    <section className=" position-relative  py-5">
+    <section className=" position-relative mt-4  pt-5 pb-3">
       <Container className="py-lg-5 mt-lg-5">
-        <div className="text-center mb-5">
+        <div className="text-center mb-3">
           <span className=" ff_highspeed fw-normal fs_5xl clr_white yellow_linear_bg ">
             watch video
           </span>

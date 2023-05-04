@@ -15,7 +15,7 @@ export default class CenterMode extends Component {
       adaptiveHeight: false,
       speed: 500,
       autoplay: true,
-      autoplaySpeed: 1000,
+      autoplaySpeed: 2000,
       responsive: [
         {
           breakpoint: 1024,
@@ -24,6 +24,7 @@ export default class CenterMode extends Component {
             slidesToScroll: 3,
             infinite: true,
             dots: true,
+            centerMode: false,
           },
         },
         {

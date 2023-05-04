@@ -12,6 +12,7 @@ import AccordianSec from "./components/AccordianSec";
 import Team from "./components/Team";
 import Preloader from "./components/Preloader";
 import TopToBottom from "./components/BackToTop";
+import RoadmapSec from "./components/RoadmapSec";
 function App() {
   return (
     <>
@@ -22,6 +23,7 @@ function App() {
         <About />
         <WatchVideo />
         <Center />
+        <RoadmapSec />
         <Team />
         <AccordianSec />
         <TopToBottom />
