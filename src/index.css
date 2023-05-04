@@ -68,6 +68,54 @@ body {
     overflow: visible !important;
 }
 
+.bg-shadow {
+    Width: 360.94px;
+    Height: 456.88px;
+    position: relative;
+    background: #fff;
+    display: inline-block;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.bg-shadow:after {
+    content: "";
+    width: 100%;
+    ;
+    height: 98%;
+    ;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    z-index: -1;
+    -webkit-filter: blur(20px);
+    /* Safari 6.0 - 9.0 */
+    filter: blur(20px);
+}
+
+.bg-shadow:nth-child(1):after {
+    background-image: linear-gradient(135deg, #A0FE65 10%, #FA016D 100%);
+}
+
+.bg-shadow:nth-child(2):after {
+    background-image: linear-gradient(135deg, #FEC163 10%, #DE4313 100%);
+}
+
+.bg-shadow:after {
+    content: "";
+    width: 100%;
+    ;
+    height: 100%;
+    ;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    -webkit-filter: blur(20px);
+    /* Safari 6.0 - 9.0 */
+    filter: blur(20px);
+}
 
 .avatar:before {
     width: 100%;

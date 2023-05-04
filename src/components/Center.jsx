@@ -21,7 +21,7 @@ export default class CenterMode extends Component {
           breakpoint: 1024,
           settings: {
             slidesToShow: 2,
-             slidesToScroll: 3,
+            slidesToScroll: 3,
             infinite: true,
             dots: true,
           },
@@ -52,8 +52,8 @@ export default class CenterMode extends Component {
           </div>
           <div className=" w-100 h-100 bg- white py-5 ">
             <Slider {...settings} className=" py-5 px-3  ">
-              <div className=" w-100 h-100">
-                <div className="avatar position-relative slide_box">
+              <div className=" w-100 h-100 ">
+                <div className="avatar bg-shadow position-relative slide_box">
                   <img
                     src={women}
                     className=" position-absolute img_position"
