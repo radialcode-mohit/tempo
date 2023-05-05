@@ -7,10 +7,10 @@ const Story = () => {
   return (
     <section className="pb-5 position-relative">
       <Container>
-        <Row className="py-lg-5 align-items-center justify-content-center">
-          <Col md={9} lg={6}>
+        <Row className="py-lg-5 align-items-lg-end align-items-xl-center justify-content-center">
+          <Col md={9} lg={6} className=" overflow-hidden">
             <div className="avatar overflow-hidden w-100 ">
-              <img className="w-100 avatar  " src={gif} alt="gif" />
+              <img className="w-100  rounded-5" src={gif} alt="gif" />
             </div>
           </Col>{" "}
           <Col lg={6} className=" text-center text-lg-start">
@@ -43,7 +43,7 @@ const Story = () => {
       </div>
       <div className="position-absolute sec2_right_crcle_pos d-none d-xxl-block">
         <div className=" position-relative">
-          <div className="blue_crcle position-absolute top-0"></div>
+          <div className="blue_crcle position-absolute top_111"></div>
           <img src={rightcrcle} alt="rightcrcle" />
         </div>
       </div>

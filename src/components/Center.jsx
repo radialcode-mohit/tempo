@@ -15,7 +15,7 @@ export default class CenterMode extends Component {
       adaptiveHeight: false,
       speed: 500,
       autoplay: true,
-      autoplaySpeed: 1000,
+      autoplaySpeed: 2000,
       responsive: [
         {
           breakpoint: 1024,
@@ -24,6 +24,7 @@ export default class CenterMode extends Component {
             slidesToScroll: 3,
             infinite: true,
             dots: true,
+            centerMode: false,
           },
         },
         {
@@ -44,7 +45,7 @@ export default class CenterMode extends Component {
     };
     return (
       <section>
-        <Container className=" my-lg-5 py-5 overflow-hidden">
+        <Container className=" my-lg-5 pt-5 pb-lg-5 overflow-hidden">
           <div className="text-center mb-5">
             <span className=" ff_highspeed fw-normal fs_5xl clr_white ournft ">
               OUR NFT

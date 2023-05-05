@@ -4,6 +4,11 @@ import mainlogo from "../assets/images/svg/TEMPO.svg";
 import cross from "../assets/images/img/cross.png";
 const MyNav = () => {
   const [first, setfirst] = useState(true);
+  if (first) {
+    document.body.classList.remove("overflow-hidden");
+  } else {
+    document.body.classList.add("overflow-hidden");
+  }
   return (
     <nav className="nav_bg_rgb py_2 1 py-4">
       <Container>
