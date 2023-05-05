@@ -18,111 +18,98 @@ export default class CenterMode extends Component {
       autoplaySpeed: 2000,
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1440,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 3,
             slidesToScroll: 3,
             infinite: true,
             dots: true,
-            centerMode: false,
+            centerMode: true,
           },
         },
         {
-          breakpoint: 600,
+          breakpoint: 1000,
+          settings: {
+            slidesToShow: 2,
+            centerMode: false,
+            slidesToScroll: 2,
+          },
+        },
+        {
+          breakpoint: 780,
           settings: {
             slidesToShow: 1,
+            centerMode: false,
             slidesToScroll: 1,
+            centerMode: false,
           },
         },
         {
           breakpoint: 576,
           settings: {
             slidesToShow: 1,
+            arrows: false,
             slidesToScroll: 1,
+            centerMode: false,
           },
         },
       ],
     };
     return (
       <section>
-        <Container className=" my-lg-5 pt-5 pb-lg-5 overflow-hidden">
-          <div className="text-center mb-5">
+        <Container className=" my-lg-5 pt-5 pb-lg-5 ">
+          <div className="text-center mb-lg-5">
             <span className=" ff_highspeed fw-normal fs_5xl clr_white ournft ">
               OUR NFT
             </span>
           </div>
-          <div className=" w-100 h-100 bg- white py-5 ">
-            <Slider {...settings} className=" py-5 px-3  ">
-              <div className=" w-100 h-100 ">
-                <div className="avatar bg-shadow position-relative slide_box">
-                  <img
-                    src={women}
-                    className=" position-absolute img_position"
-                    alt="men"
-                  />
+          <div className=" w-100 h-100 bg- white ">
+            <Slider {...settings} className="     ">
+              <div className="pt-md-5 pb-5 pb-md-0  px-5 px-md-3">
+                <div className=" mt-5 pt-5 ">
+                  <div className=" avatar box_shadow w-100 mt-5 ">
+                    <img
+                      className=" pt_minus w_100 women_width  "
+                      src={women}
+                      alt="men"
+                    />
+                  </div>
                 </div>
               </div>
-              <div className=" w-100 h-100">
-                <div className="avatar position-relative slide_box">
-                  <img
-                    src={women_2}
-                    className=" position-absolute img_position"
-                    alt="men"
-                  />
+              <div className="pt-md-5 pb-5 pb-md-0  px-5 px-md-3">
+                <div className=" mt-5 pt-5">
+                  <div className=" avatar box_shadow w-100 mt-5 ">
+                    <img className=" pt_minus w_100" src={women_2} alt="men" />
+                  </div>
                 </div>
-              </div>{" "}
-              <div className=" w-100 h-100">
-                <div className="avatar position-relative slide_box">
-                  <img
-                    src={men}
-                    className=" position-absolute img_position"
-                    alt="men"
-                  />
+              </div>
+              <div className="pt-md-5 pb-5 pb-md-0  px-5 px-md-3">
+                <div className=" mt-5 pt-5">
+                  <div className=" avatar box_shadow w-100 mt-5 ">
+                    <img className=" pt_minus w_100" src={women_2} alt="men" />
+                  </div>
                 </div>
-              </div>{" "}
-              <div className=" w-100 h-100">
-                <div className="avatar position-relative slide_box">
-                  <img
-                    src={women}
-                    className=" position-absolute img_position"
-                    alt="men"
-                  />
+              </div>
+              <div className="pt-md-5 pb-5 pb-md-0  px-5 px-md-3">
+                <div className=" mt-5 pt-5">
+                  <div className=" avatar box_shadow w-100 mt-5 ">
+                    <img
+                      className=" pt_minus w_100 men_width"
+                      src={men}
+                      alt="men"
+                    />
+                  </div>
                 </div>
-              </div>{" "}
-              <div className=" w-100 h-100">
-                <div className="avatar position-relative slide_box">
-                  <img
-                    src={women}
-                    className=" position-absolute img_position"
-                    alt="men"
-                  />
-                </div>
-              </div>{" "}
-              <div className=" w-100 h-100">
-                <div className="avatar position-relative slide_box">
-                  <img
-                    src={women_2}
-                    className=" position-absolute img_position"
-                    alt="men"
-                  />
-                </div>
-              </div>{" "}
-              <div className=" w-100 h-100">
-                <div className="avatar position-relative slide_box">
-                  <img
-                    src={women}
-                    className=" position-absolute img_position"
-                    alt="men"
-                  />
-                </div>
-              </div>{" "}
-              <div className=" w-100 h-100">
-                <div className="avatar position-relative slide_box">
-                  <img
-                    src={men}
-                    className=" position-absolute img_position"
-                    alt="men"
-                  />
+              </div>
+              <div className="pt-md-5 pb-5 pb-md-0  px-5 px-md-3">
+                <div className=" mt-5 pt-5">
+                  <div className=" avatar box_shadow w-100 mt-5 ">
+                    <img
+                      className=" pt_minus w_100 men_width"
+                      src={men}
+                      alt="men"
+                    />
+                  </div>
                 </div>
               </div>
             </Slider>

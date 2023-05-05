@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       <div className="overflow-hidden">
-        <Preloader />
+        {/* <Preloader /> */}
         <Header />
         <Story />
         <About />
