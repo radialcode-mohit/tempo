@@ -14,6 +14,7 @@ export default class CenterMode extends Component {
       arrows: true,
       adaptiveHeight: false,
       speed: 500,
+      dots: false,
       autoplay: true,
       autoplaySpeed: 2000,
       responsive: [
@@ -23,7 +24,7 @@ export default class CenterMode extends Component {
             slidesToShow: 3,
             slidesToScroll: 3,
             infinite: true,
-            dots: true,
+            dots: false,
             centerMode: true,
           },
         },
@@ -51,6 +52,7 @@ export default class CenterMode extends Component {
             arrows: false,
             slidesToScroll: 1,
             centerMode: false,
+            dots: true,
           },
         },
       ],
@@ -63,11 +65,11 @@ export default class CenterMode extends Component {
               OUR NFT
             </span>
           </div>
-          <div className=" w-100 h-100 bg- white ">
-            <Slider {...settings} className="     ">
-              <div className="pt-md-5 pb-5 pb-md-0  px-5 px-md-3">
+          <div className=" w-100 h-100 bg- white pb-5 pb-lg-0 ">
+            <Slider {...settings} className=" mb-5 pb-5 pb-xl-0 mb-lg-0     ">
+              <div className="pt-md-5 pb-5 pb-md-0  px-4 px-md-3">
                 <div className=" mt-5 pt-5 ">
-                  <div className=" avatar box_shadow w-100 mt-5 ">
+                  <div className=" avatar_3 box_shadow w-100 mt-5 ">
                     <img
                       className=" pt_minus w_100 women_width  "
                       src={women}
@@ -76,23 +78,23 @@ export default class CenterMode extends Component {
                   </div>
                 </div>
               </div>
-              <div className="pt-md-5 pb-5 pb-md-0  px-5 px-md-3">
+              <div className="pt-md-5 pb-5 pb-md-0  px-4 px-md-3">
                 <div className=" mt-5 pt-5">
-                  <div className=" avatar box_shadow w-100 mt-5 ">
+                  <div className=" avatar_3 box_shadow w-100 mt-5 ">
                     <img className=" pt_minus w_100" src={women_2} alt="men" />
                   </div>
                 </div>
               </div>
-              <div className="pt-md-5 pb-5 pb-md-0  px-5 px-md-3">
+              <div className="pt-md-5 pb-5 pb-md-0  px-4 px-md-3">
                 <div className=" mt-5 pt-5">
-                  <div className=" avatar box_shadow w-100 mt-5 ">
+                  <div className=" avatar_3 box_shadow w-100 mt-5 ">
                     <img className=" pt_minus w_100" src={women_2} alt="men" />
                   </div>
                 </div>
               </div>
-              <div className="pt-md-5 pb-5 pb-md-0  px-5 px-md-3">
+              <div className="pt-md-5 pb-5 pb-md-0  px-4 px-md-3">
                 <div className=" mt-5 pt-5">
-                  <div className=" avatar box_shadow w-100 mt-5 ">
+                  <div className=" avatar_3 box_shadow w-100 mt-5 ">
                     <img
                       className=" pt_minus w_100 men_width"
                       src={men}
@@ -101,9 +103,9 @@ export default class CenterMode extends Component {
                   </div>
                 </div>
               </div>
-              <div className="pt-md-5 pb-5 pb-md-0  px-5 px-md-3">
+              <div className="pt-md-5 pb-5 pb-md-0  px-4 px-md-3">
                 <div className=" mt-5 pt-5">
-                  <div className=" avatar box_shadow w-100 mt-5 ">
+                  <div className=" avatar_3 box_shadow w-100 mt-5 ">
                     <img
                       className=" pt_minus w_100 men_width"
                       src={men}
